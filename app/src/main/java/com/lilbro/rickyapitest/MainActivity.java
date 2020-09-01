@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(JSONObject response) {
                 try {
                     JSONArray characters = response.getJSONArray("results");
-                    Toast.makeText(MainActivity.this,characters.getJSONObject(0).getString("name") , Toast.LENGTH_LONG).show();
                     for(int i=0; i<characters.length(); i++){
+
                         listCharacter.add(new Character(
-                                characters.getJSONObject(0).getString("name"),
-                                characters.getJSONObject(0).getString("status"),
-                                characters.getJSONObject(0).getString("species"),
-                                characters.getJSONObject(0).getString("gender"),
-                                characters.getJSONObject(0).getString("image")
+                                characters.getJSONObject(i).getString("name"),
+                                characters.getJSONObject(i).getString("status"),
+                                characters.getJSONObject(i).getString("species"),
+                                characters.getJSONObject(i).getString("gender"),
+                                characters.getJSONObject(i).getString("image")
                         ));
                     }
 
@@ -75,4 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         requestQueue.add(objectRequest);
     }
+
+
+
 }

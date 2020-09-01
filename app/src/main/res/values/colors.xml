@@ -3,4 +3,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="blackName">#0e0c0c</color>
+    <color name="blusBackground">#23d2ee</color>
+    <color name="blusBackground2">#0a6371</color>
 </resources>

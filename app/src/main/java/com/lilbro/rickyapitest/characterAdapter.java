@@ -13,7 +13,7 @@ import java.util.List;
 public class characterAdapter extends RecyclerView.Adapter<characterItem> {
     private List<Character> listCharacter;
 
-    public characterAdapter(List<Character> l){
+    public characterAdapter(List<Character> l ){
         this.listCharacter = l;
     }
 

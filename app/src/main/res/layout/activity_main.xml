@@ -11,6 +11,7 @@
         android:id="@+id/recyclerV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/blusBackground2"
         />
 
 </RelativeLayout>
